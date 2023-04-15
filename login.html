@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Login</title>
+</head>
+
+<body>
+    <section>
+        <header>
+            <nav class="nav-bar">
+                <div class="logo">
+                    <h1>MetaSite</h1>
+                </div>
+                <div class="nav-list">
+                    <ul>
+                        <li class="nav-item" id="home"><a href="login.html" class="nav-link"> <b style="color:#FF8400">Login</b></a></li>
+                        <li class="nav-item"><a href="cadastro.html" class="nav-link"><b>Cadastro</b></a></li>
+                        <li class="nav-item"><a href="home.html" class="nav-link"> <b>Home</b></a></li>
+                    </ul>
+                </div>
+                <div class="login-button">
+                    <button><a href="#"><b>Entrar | Cadastrar</b></a></button>
+                </div>
+    
+                <div class="mobile-menu-icon">
+                    <button onclick="menuShow()"><img class="icon" src="/img/menu_white_36dp.svg" alt=""></button>
+                </div>
+            </nav>
+            <div class="mobile-menu">
+                <ul>
+                    <li class="nav-item" id="home"><a href="#" class="nav-link"><b style="color:#FF8400">Login</b></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><b>Cadastro</b></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><b>Home</b></a></li>
+                </ul>
+    
+                <div class="login-button">
+                    <button><a href="#"><b>Entrar | Cadastrar</b></a></button>
+                </div>
+            </div>
+        </header>
+            <div class="center">
+            <div class="form-box">
+                <div class="form-value">
+                    <form action="">
+                        <h2>Login</h2>
+                        <div class="inputbox">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <input type="email" id="email" >
+                            <label for="">Email</label>
+                        </div>
+                        <div class="inputbox">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                            <input type="password" id="senha" >
+                            <label for="">Password</label>
+                        </div>
+                        <div class="forget">
+                            <label for=""><input type="checkbox">Remember Me  <a href="#">Forget Password</a></label>
+                        </div>
+                        <p class="erros"></p>
+                        </br>
+                        <button type="button" onclick="login()" >Log in</button>
+                        <div class="register">
+                            <p>Don't have a account <a href="cadastro.html">Register</a></p>
+                        </div>
+                    </form>
+                </div>
+                
+            </div>
+            </div>
+            
+    </section>
+    
+    <script src="/js/scripts.js"></script>
+    <script src="/js/login.js"></script>
+</body>
+</html>
