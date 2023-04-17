@@ -62,6 +62,8 @@ function cadastrar(){
                         usuarios.push(usuario)
     
                         localStorage.setItem('cadastrados', JSON.stringify(usuarios))
+                        alert('Cadastro realizado')
+                        window.location.href = 'login.html'
                     }else{
                         for(let i=0; i<cadastrados.length; i++){
                         
@@ -78,9 +80,11 @@ function cadastrar(){
                             usuarios.push(usuario)
         
                             localStorage.setItem('cadastrados', JSON.stringify(usuarios))
+                            alert('Cadastro realizado')
+                            window.location.href = 'login.html'
                         }
                     }
-                    //window.location.href = 'index.html'
+                    
                 
                 }
             }

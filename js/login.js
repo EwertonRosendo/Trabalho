@@ -13,13 +13,11 @@ function login(){
         if (cadastrados[i]['email'] == email && cadastrados[i]['senha']==senha){
             
             alert("login realizado")
+            window.location.href = 'home.html'
             break
         }else{
             document.getElementsByClassName('erros')[0].innerHTML = ('Senha ou email incorretos') 
         }
-        
-    
-    //window.location.href = 'index.html'
 
     }
 }
