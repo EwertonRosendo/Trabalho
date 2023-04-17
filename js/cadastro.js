@@ -56,22 +56,29 @@ function cadastrar(){
                     
                     //redirecionar para pagina de home quando o login for feito
                     let isCadastrado = false
-                    
-                    for(let i=0; i<cadastrados.length; i++){
-                        
-                        if (cadastrados[i]['email'] == email || cadastrados[i]['cpf']==cpf){
-                            isCadastrado = true
-                            alert("Conta já existe")
-                            break
-                        }
-                        
-                    }
-                    if(!isCadastrado){
+                    if(cadastrados == null){
                         let usuario = {email:email, senha:senha, nome:nome, cpf:cpf, dataNascimento:dataNascimento, dataCriacao:new Date}
     
                         usuarios.push(usuario)
     
                         localStorage.setItem('cadastrados', JSON.stringify(usuarios))
+                    }else{
+                        for(let i=0; i<cadastrados.length; i++){
+                        
+                            if (cadastrados[i]['email'] == email || cadastrados[i]['cpf']==cpf){
+                                isCadastrado = true
+                                alert("Conta já existe")
+                                break
+                            }
+                            
+                        }
+                        if(!isCadastrado){
+                            let usuario = {email:email, senha:senha, nome:nome, cpf:cpf, dataNascimento:dataNascimento, dataCriacao:new Date}
+        
+                            usuarios.push(usuario)
+        
+                            localStorage.setItem('cadastrados', JSON.stringify(usuarios))
+                        }
                     }
                     //window.location.href = 'index.html'
                 
