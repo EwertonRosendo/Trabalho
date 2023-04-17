@@ -155,5 +155,7 @@ body{
     align-items: center;
     background-color: white ;
 }
-
+p{
+    font-family: 'K2D', sans-serif;
+}
 
