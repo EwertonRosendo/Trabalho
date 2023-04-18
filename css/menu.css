@@ -52,7 +52,7 @@
     border: none;
     padding: 10px 15px;
     border-radius: 5px;
-    background-color: #0187a7;
+    background-color: transparent;
 }
 
 .login-button button a {
@@ -68,8 +68,8 @@
 
 .mobile-menu {
     display: none;
-    background-color: black;
-}
+    background: linear-gradient(rgb(36, 35, 35), black);
+    }
 
 section{
     min-height: 100vh;

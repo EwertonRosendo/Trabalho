@@ -40,11 +40,11 @@ button{
 }
 
 .imgbuttonleft{
-    width: 100px;
+    width: 60px;
     transform: rotate(100grad);  /* rotaciona a imagem do botão */
 }
 .imgbuttonright{
-    width: 100px;
+    width: 60px;
     transform: rotate(300grad);      
 }
 .carrossel{
@@ -54,10 +54,14 @@ button{
        
 }
 .imagem{    
-    object-fit: cover;      /* redimensiona a imagem para preencher o tamanho do pai */    
-     
+    object-fit: cover;
+    /* redimensiona a imagem para preencher o tamanho do pai
+
+    object-position: left right;
+    */
+
     width: 1200px;
-    height: 400px;    
+    height: 400px;
 }
 .areaslide{
     width: 100%;
