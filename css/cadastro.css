@@ -68,7 +68,7 @@ top: -5px;
     outline: none;
     font-size: 1em;
     padding:0 35px 0 5px;
-    color: #575757;
+    color: rgb(122, 121, 121);
 }
 .inputbox ion-icon{
     position: absolute;

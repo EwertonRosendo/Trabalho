@@ -50,6 +50,7 @@ h2{
     width: 310px;
     border-bottom: 2px solid #fff;
 }
+
 .inputbox label{
     position: absolute;
     top: 50%;
@@ -72,7 +73,7 @@ top: -5px;
     outline: none;
     font-size: 1em;
     padding:0 35px 0 5px;
-    color: #fff;
+    color: rgb(122, 121, 121);
 }
 .inputbox ion-icon{
     position: absolute;
