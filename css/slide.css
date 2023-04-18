@@ -18,6 +18,9 @@
     transition: transform 0.5s;
     opacity: 0.2;        
 }
+.buttoncarrossel-left:hover{  
+    opacity: 0.8;        
+}
 .buttoncarrossel-right{
     display: flex;
     flex-direction: column;
@@ -30,6 +33,18 @@
     opacity: 0.2;
     background:linear-gradient(to left,transparent 0%,black 200%) ;
     color:linear-gradient(to left,transparent 0%,black 200%) ;
+}
+button{
+    background: rgba(red, green, blue, transparent);
+}
+.buttoncarrossel-right:hover{  
+    opacity: 0.8;        
+}
+.imgbuttonleft{
+    width: 100px;
+}
+.imgbuttonright{
+    width: 100px;
 }
 .carrossel{
     display: flex;
