@@ -14,7 +14,7 @@ function carrossel(){
 
 }
 
-setInterval(carrossel,1000);
+setInterval(carrossel,5000);
 
 function goLeft() {
     contador--;    
