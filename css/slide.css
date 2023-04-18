@@ -14,9 +14,9 @@
     position: absolute;
     left: 0;
     width: 100px;
-    height: 400px; 
-    transition: transform 0.5s;
-    opacity: 0.2;        
+    height: 400px;     
+    opacity: 0.2;   
+        
 }
 .buttoncarrossel-left:hover{  
     opacity: 0.8;        
@@ -28,8 +28,7 @@
     position: absolute;
     right: 0;
     width: 100px;
-    height: 400px; 
-    transition: transform 0.5s;
+    height: 400px;     
     opacity: 0.2;
     background:linear-gradient(to left,transparent 0%,black 200%) ;
     color:linear-gradient(to left,transparent 0%,black 200%) ;
@@ -42,9 +41,11 @@ button{
 }
 .imgbuttonleft{
     width: 100px;
+    transform: rotate(100grad);  /* rotaciona a imagem do botão */
 }
 .imgbuttonright{
     width: 100px;
+    transform: rotate(300grad);      
 }
 .carrossel{
     display: flex;
