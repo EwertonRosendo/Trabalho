@@ -126,6 +126,8 @@ button{
 }
 
 
+
+
 @media screen and (max-width: 730px) {
     .nav-bar {
         padding: 1.5rem 4rem;
@@ -256,3 +258,63 @@ button{
     }
 
 }
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;      
+    flex-direction: row; 
+
+     }
+
+    .container-carrossel{
+        display: flex;
+        box-shadow: 2px 2px 4px ;        
+        overflow: hidden;        
+        width: 500px;
+        height: 500px;
+        position:relative
+    }
+    .carrossel{
+         display: flex;
+         transition:transform 0.5s ease-in-out;      /* quando acontecer um troca visual vai demorar 0.5 segundos "ease-in-out" especifica a função de temporização do efeito de transição,   que determina como a transição progride ao longo do tempo. "Ease-in-out" significa que a transição começará lentamente, acelerará no meio e depois desacelerará novamente no final. */
+         transform: translateX(0);                  /* move no eixo X */
+    }
+    .imagem{
+        object-fit: cover;      /* redimensiona a imagem para preencher o tamanho do pai */         
+        width: 500px;
+        height: 500px;
+    }
+    .buttonleft{
+        position: absolute;
+        left: 0;
+        width: 50px;
+        height: 500px; 
+        transition:transform 0.5s ease-in-out;
+        opacity: 0.2;              
+    }
+    .buttonright{
+        position: absolute;
+        right: 0;
+        width: 50px;
+        height: 500px; 
+        transition:transform 0.5s ease-in-out;
+        opacity: 0.2;
+    }
+    .buttonleft:hover{
+        opacity: 0.8;  
+        cursor: pointer;     
+    }
+    .buttonright:hover{
+        opacity: 0.8;
+        cursor: pointer;         
+    }
+    .buttonleftimg{
+        width: 30px;
+        height: auto;    
+    }
+    .buttonrightimg{
+        width: 30px;
+        height: auto;   
+    }
