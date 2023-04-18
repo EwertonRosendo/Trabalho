@@ -15,8 +15,8 @@
     left: 0;
     width: 100px;
     height: 400px;     
-    opacity: 0.2;   
-        
+    opacity: 0.2;  
+    background:linear-gradient(to left,transparent 0%,black 200%) ;       
 }
 .buttoncarrossel-left:hover{  
     opacity: 0.8;        
@@ -30,15 +30,15 @@
     width: 100px;
     height: 400px;     
     opacity: 0.2;
-    background:linear-gradient(to left,transparent 0%,black 200%) ;
-    color:linear-gradient(to left,transparent 0%,black 200%) ;
-}
-button{
-    background: rgba(red, green, blue, transparent);
+    background:linear-gradient(to right,transparent 0%,black 200%) ;
 }
 .buttoncarrossel-right:hover{  
     opacity: 0.8;        
 }
+button{
+    background: rgba(red, green, blue, transparent);
+}
+
 .imgbuttonleft{
     width: 100px;
     transform: rotate(100grad);  /* rotaciona a imagem do botão */
@@ -55,7 +55,7 @@ button{
 }
 .imagem{    
     object-fit: cover;      /* redimensiona a imagem para preencher o tamanho do pai */    
-    object-position: right top;     
+     
     width: 1200px;
     height: 400px;    
 }
