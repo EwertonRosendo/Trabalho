@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/menu.css">
     <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/slide.css">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
@@ -61,10 +62,35 @@
         slide abaixo
     -->
    
-    
+    <div class="areaslide">
         
+        <div class="container-botão-imagem">    
+            
+            <div class="carrossel" id="imagens">
+                <img class=imagem src="https://omnitos.com/wp-content/uploads/2021/08/Solo-Leveling-768x432.png" alt="sololeveling">
+                <img class=imagem src="https://ichef.bbci.co.uk/news/640/cpsprodpb/1139B/production/_110655507_kb.jpg" alt="cobinho">
+                <img class=imagem src="https://www.rbsdirect.com.br/filestore/3/7/2/1/1/6/4_d70b367fce17394/4611273_93af99016204a93.jpg?w=700" alt="coldplay">
+                <img class=imagem src="https://a.espncdn.com/photo/2019/1229/r646891_1279x720_16-9.jpg" alt="gaules">
+            </div>  
+            <div class="buttoncarrossel-left">
+                    <button onclick="goLeft()" >
+                        esquerda
+                    </button>
+                </div>
+            <div class="buttoncarrossel-right">
+                <button onclick="goRight()">direita</button>
+            </div>
+                               
+        </div>
+    </div>
+        
+    <!--
+        slide acima
+    -->
+
     
         <div class="context">
+            <hr>
     
             <div class="item">
     
@@ -188,7 +214,7 @@
     document.getElementById("loading").style.display = "none";
     document.getElementById("conteudo").style.display = "inline";
 
-}, 4000);
+}, 3000);
     </script>
 
 </body>

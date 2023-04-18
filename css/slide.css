@@ -1,8 +1,53 @@
-.container-carrossel{
-    width: 500px;
-    height: 500px;   
+.container-botão-imagem{
+    display: flex;
+    box-shadow: 2px 2px 4px ;        
+    overflow: hidden;        
+    width: 1200px;
+    height: 400px;
+    position:relative;
+    border-radius: 10px;    
 }
-.imagem{
-    width: 500px;
-    height: 500px;
+.buttoncarrossel-left{  
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    position: absolute;
+    left: 0;
+    width: 100px;
+    height: 400px; 
+    transition: transform 0.5s;
+    opacity: 0.2;        
+}
+.buttoncarrossel-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    width: 100px;
+    height: 400px; 
+    transition: transform 0.5s;
+    opacity: 0.2;
+    background:linear-gradient(to left,transparent 0%,black 200%) ;
+    color:linear-gradient(to left,transparent 0%,black 200%) ;
+}
+.carrossel{
+    display: flex;
+    transition: transform 0.5s;
+    transform: translateX(0);    
+       
+}
+.imagem{    
+    object-fit: cover;      /* redimensiona a imagem para preencher o tamanho do pai */    
+    object-position: right top;     
+    width: 1200px;
+    height: 400px;    
+}
+.areaslide{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
 }

@@ -10,7 +10,7 @@ function carrossel(){
         contador = 0;
     }
 
-    imagens.style.transform = `translateX(${-contador * 500}px)`;
+    imagens.style.transform = `translateX(${-contador * 1200}px)`;
 
 }
 
@@ -21,7 +21,7 @@ function goLeft() {
     if (contador < 0) {
       contador = ibagens.length - 1;
     }    
-    imagens.style.transform = `translateX(${-contador * 500}px)`;
+    imagens.style.transform = `translateX(${-contador * 1200}px)`;
   }
 
   function goRight() {
@@ -29,5 +29,5 @@ function goLeft() {
     if (contador > ibagens.length - 1) {
       contador = 0;
     }    
-    imagens.style.transform = `translateX(${contador * -500}px)`;
+    imagens.style.transform = `translateX(${contador * -1200}px)`;
   }
