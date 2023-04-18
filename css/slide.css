@@ -67,3 +67,6 @@ button{
     align-items: center;
     margin: 10px;
 }
+.transparent{
+    background: transparent;
+}
