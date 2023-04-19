@@ -2,13 +2,13 @@ function menuShow() {
     let menuMobile = document.querySelector('.mobile-menu');
     if (menuMobile.classList.contains('open')) {
         menuMobile.classList.remove('open');
-        document.querySelector('.icon').src = "/img/menu_white_36dp.svg";
+        document.querySelector('.icon').src = "https://raw.githubusercontent.com/EwertonRosendo/Trabalho/d4bfe0b31dc52cdf604645c997d6c02f84765ba6/img/menu_white_36dp.svg";
         
         tirarCor()
 
     } else {
         menuMobile.classList.add('open');
-        document.querySelector('.icon').src = "/img/close_white_36dp.svg";
+        document.querySelector('.icon').src = "https://raw.githubusercontent.com/EwertonRosendo/Trabalho/d4bfe0b31dc52cdf604645c997d6c02f84765ba6/img/close_white_36dp.svg";
 
         mudarCor()
     }
